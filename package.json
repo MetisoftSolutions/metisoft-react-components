@@ -1,19 +1,22 @@
 {
   "name": "metisoft-react-components",
-  "version": "0.1.0",
+  "version": "0.0.0",
+  "versionUpdate": "update-minor-RRENTALZ-7",
+  "main": "index.js",
+  "types": "dist/index.ts",
   "private": true,
   "dependencies": {
-    "@babel/core": "7.4.3",
     "@svgr/webpack": "4.1.0",
     "@types/jest": "24.0.13",
+    "@types/lodash": "^4.14.134",
     "@types/node": "12.0.8",
     "@types/react": "16.8.19",
     "@types/react-dom": "16.8.4",
+    "@types/react-router-dom": "^4.3.4",
     "@typescript-eslint/eslint-plugin": "1.6.0",
     "@typescript-eslint/parser": "1.6.0",
     "babel-eslint": "10.0.1",
     "babel-jest": "^24.8.0",
-    "babel-loader": "8.0.5",
     "babel-plugin-named-asset-import": "^0.3.2",
     "babel-preset-react-app": "^9.0.0",
     "camelcase": "^5.2.0",
@@ -38,6 +41,7 @@
     "jest-environment-jsdom-fourteen": "0.1.0",
     "jest-resolve": "24.7.1",
     "jest-watch-typeahead": "0.3.0",
+    "lodash": "^4.17.14",
     "mini-css-extract-plugin": "0.5.0",
     "optimize-css-assets-webpack-plugin": "5.0.1",
     "pnp-webpack-plugin": "1.2.1",
@@ -50,6 +54,7 @@
     "react-app-polyfill": "^1.0.1",
     "react-dev-utils": "^9.0.1",
     "react-dom": "^16.8.6",
+    "react-router-dom": "^5.0.1",
     "resolve": "1.10.0",
     "sass-loader": "7.1.0",
     "semver": "6.0.0",
@@ -68,7 +73,8 @@
     "build": "node scripts/build.js",
     "test": "node scripts/test.js",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "build-lib": "tsc && gulp"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -86,12 +92,13 @@
     ]
   },
   "devDependencies": {
-    "@babel/core": "^7.4.5",
+    "@babel/core": "^7.5.4",
     "@storybook/addon-actions": "^5.1.3",
     "@storybook/addon-links": "^5.1.3",
     "@storybook/addons": "^5.1.3",
     "@storybook/react": "^5.1.3",
-    "babel-loader": "^8.0.6"
+    "babel-loader": "^8.0.6",
+    "gulp": "^4.0.2"
   },
   "jest": {
     "collectCoverageFrom": [
