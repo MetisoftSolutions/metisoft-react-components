@@ -1,7 +1,6 @@
 {
   "name": "metisoft-react-components",
-  "version": "0.0.0",
-  "versionUpdate": "update-minor-RRENTALZ-7",
+  "version": "0.1.0",
   "main": "index.js",
   "types": "dist/index.ts",
   "private": true,
