@@ -1,6 +1,6 @@
 {
   "name": "metisoft-react-components",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "main": "index.js",
   "types": "dist/index.ts",
   "private": true,
@@ -14,7 +14,7 @@
     "@types/react-router-dom": "^4.3.4",
     "@typescript-eslint/eslint-plugin": "1.6.0",
     "@typescript-eslint/parser": "1.6.0",
-    "babel-eslint": "10.0.1",
+    "babel-eslint": "^10.0.3",
     "babel-jest": "^24.8.0",
     "babel-plugin-named-asset-import": "^0.3.2",
     "babel-preset-react-app": "^9.0.0",
@@ -97,7 +97,8 @@
     "@storybook/addons": "^5.1.3",
     "@storybook/react": "^5.1.3",
     "babel-loader": "^8.0.6",
-    "gulp": "^4.0.2"
+    "gulp": "^4.0.2",
+    "metisoft-deploy-tools": "git+https://github.com/MetisoftSolutions/metisoft-deploy-tools.git"
   },
   "jest": {
     "collectCoverageFrom": [
