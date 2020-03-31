@@ -1,6 +1,6 @@
 {
   "name": "metisoft-react-components",
-  "version": "0.1.1-update-patch",
+  "version": "0.1.2",
   "main": "index.js",
   "types": "dist/index.ts",
   "private": true,
