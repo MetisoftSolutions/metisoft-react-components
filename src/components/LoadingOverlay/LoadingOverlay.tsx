@@ -6,17 +6,17 @@ const styles = require('./LoadingOverlay.module.css');
 
 export interface ILoadingOverlayProps {
   active: boolean;
-  fullPage?: boolean;
+  sectionOnly?: boolean;
 }
 
 export class LoadingOverlay extends React.Component<ILoadingOverlayProps> {
 
   public render() {
     let className = styles.loadingOverlay;
-    if (this.props.fullPage) {
-      className += ' ' + styles.fullPage;
-    } else {
+    if (this.props.sectionOnly) {
       className += ' ' + styles.section;
+    } else {
+      className += ' ' + styles.fullPage;
     }
 
     return this.props.active ? (

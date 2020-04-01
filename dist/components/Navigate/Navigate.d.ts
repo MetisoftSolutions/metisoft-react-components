@@ -3,4 +3,9 @@ import { RouteComponentProps } from 'react-router-dom';
 export interface INavigateProps extends RouteComponentProps {
     to: string;
 }
-export declare const Navigate: React.ComponentClass<Pick<INavigateProps, "to">, any>;
+declare class RawNavigate extends React.Component<INavigateProps> {
+    componentDidMount(): void;
+    render(): null;
+}
+export declare const Navigate: React.ComponentClass<Pick<INavigateProps, "to">, any> & import("react-router").WithRouterStatics<typeof RawNavigate>;
+export {};
